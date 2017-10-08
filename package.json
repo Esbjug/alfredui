@@ -8,7 +8,8 @@
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
-    "postinstall": "npm install express"
+    "postinstall": "npm install express",
+    "deploy": "git subtree push --prefix dist heroku master"
   },
   "dependencies": {
     "vue": "^2.4.2",
